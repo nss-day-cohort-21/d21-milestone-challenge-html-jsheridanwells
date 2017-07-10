@@ -1,0 +1,78 @@
+body {
+	background-color: #373737;
+}
+
+.container {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+header, section {
+	background-color: #f4f4f4;
+	height: 85vh;
+	width: 90%;
+	margin: 1em auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header {
+	flex-direction: column;
+	background-image: url('../img/nashville.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 150px;
+}
+
+h1, h2 {
+	font-family: Neucha, cursive;
+}
+h1 {
+	font-size: 5em;
+}
+
+nav {
+	height: 10vh;
+	background-color: #c0b283;
+}
+
+ul {
+	flex-wrap: wrap;
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+li {
+	display: inline-block;
+	margin-right: 1.5em;
+	font-family: Neucha, cursive;
+	font-size: 1.5em
+}
+
+ul li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*ABOUT STYLES*/
+.bio {
+	flex-grow: 3;
+	border: 1px solid #000;
+}
+
+.bio-pic {
+	flex-grow: 1;
+	border: 1px solid #000;
+}
+
+
+/*MEDIA QUERIES*/
+@media (min-width: 500px) {
+	li {
+		display: inline-block;
+		margin-right: 2.5em;
+		font-family: Neucha, cursive;
+		font-size: 2em
+	}
+}
