@@ -1,6 +1,6 @@
-* {
+/** {
 	box-sizing: border-box;
-}
+}*/
 
 body {
 	background-color: #fff;
@@ -12,53 +12,9 @@ body {
 	
 }
 
-header, section {
-	background-color: #f4f4f4;
-	
-	width: 90%;
-	margin: 1em auto;
-	
-}
-
-header {
-	height: 100vh;
-	background-image: url('../img/nashville.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 0 150px;
-}
-
-h1, h2, h3 {
-	font-family: Neucha, cursive;
-	margin-left: 1em;
-	color: #373737;
-	
-}
-
-h1 {
-	font-size: 5em;
-	color: #555;
-	text-shadow: 1px 1px 0 #f4f4f4;
-}
-header h2 {
-	background-color: none;
-	float: right;
-	margin-right: 5em;
-}
-pre {
-	font-family: inherit;
-}
-
-
-.heading h2 {
-	background-color: #DCD0C0;
-	padding-left: 1em;
-}
-
 nav {
 	display: flex;
 	align-items: center;
-	height: 10vh;
 	background-color: #c0b283;
 }
 
@@ -79,8 +35,59 @@ ul li a, ul li a:hover {
 	text-decoration: none;
 }
 
+header, section {
+	background-color: #f4f4f4;
+	
+	width: 90%;
+	margin: 1em auto;
+	
+}
+
+header {
+	height: 100vh;
+	background-image: url('../img/nashville.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: Neucha, cursive;
+	margin-left: 1em;
+	color: #373737;
+	
+}
+
+h1 {
+	font-size: 5em;
+	color: #555;
+	text-shadow: 1px 1px 0 #f4f4f4;
+}
+header h2 {
+	background-color: none;
+	color: #373737;
+	text-shadow: 1px 1px 0 #f4f4f4;
+	font-size: 1.5em;
+	/*float: right;*/
+	/*margin-right: 5em;*/
+}
+pre {
+	font-family: inherit;
+}
+
+.heading {
+	width: 100%;
+	background-color: #DCD0C0;
+}
+
+.heading h2 {
+	padding-left: 1em;
+}
+
+
 p {
-	margin: 2em 5em;
+	margin: 0 0 0 1em;
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.2em;
 	color: #373737;
@@ -97,18 +104,25 @@ figcaption {
 .bio-pic img {
 	border: 5px solid #C0B283;
 	border-radius: 100%;
-	margin: 5em;
+	margin: 1em;
 	max-width: 100%;
 }
 p:first-child {
 	margin-top: 3em;
 }
+
 /*PROJECTS STYLES*/
+
 .row {
 	width: 100%;
 }
+
 .col-md-4 {
 	text-align: center;
+}
+
+#projects {
+	padding-bottom: 3em;
 }
 
 #projects img {
@@ -117,13 +131,24 @@ p:first-child {
 	border: 1px solid #C0B283;
 	border-radius: 10%;
 }
+
 #projects h3 {
-	margin: 2em;
+	margin: 1em 2em 0;
+	font-size: 3em;
 }
+
 /*BLOG STYLES*/
+article {
+	margin: 0;
+}
+
 h6 {
-	margin: 0 5em 2em 0;
+	margin: 1em;
 	font-family: 'Nunito', sans-serif;
+}
+
+p.read-more {
+	margin-bottom: 2em;
 }
 
 /*FOOTER STYLES*/
