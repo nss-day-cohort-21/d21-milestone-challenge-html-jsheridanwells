@@ -5,8 +5,6 @@ function post(date, title, body, url) {
 	this.url = url
 }
 
-let postArr = [];
-
 let post1 = new post(
 	'July 8, 2017', 
 	'L is for Liftoff, Learning, and Landing', 
@@ -21,6 +19,7 @@ let post2 = new post(
 	'https://jeremywellsdotorg.wordpress.com/2017/07/09/t-is-for-terminal-tools-and-typing/'
 	);
 
+let postArr = [];
 postArr.push(post1, post2);
 
 let date1 = document.getElementById('date1');

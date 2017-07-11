@@ -1,7 +1,5 @@
 //set copyright date
-var today = new Date();
-var year = today.getFullYear();
-var copyright = document.getElementById('copyright');
+let today = new Date();
+let year = today.getFullYear();
+let copyright = document.getElementById('copyright');
 copyright.innerText = year;
-
-
