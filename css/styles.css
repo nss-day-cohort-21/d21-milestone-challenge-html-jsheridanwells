@@ -59,6 +59,7 @@ header, section {
 	background-color: #f4f4f4;
 	width: 90%;
 	margin: 0 auto;
+	min-height: 85vh;
 	
 }
 
@@ -197,3 +198,6 @@ footer h6 {
 	float: right;
 }
 
+@media () {
+
+}
