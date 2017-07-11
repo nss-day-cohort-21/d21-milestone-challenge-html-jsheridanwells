@@ -1,4 +1,3 @@
-//create post objects
 function post(date, title, body, url) {
 	this.date = date,
 	this.title = title,
@@ -20,22 +19,26 @@ let post2 = new post(
 	'https://jeremywellsdotorg.wordpress.com/2017/07/09/t-is-for-terminal-tools-and-typing/'
 	);
 
-//create array of post objects
 let postArr = [];
 postArr.push(post1, post2);
 
-let output = '';
-let blogOutput = document.getElementById('blog-output');
+let date1 = document.getElementById('date1');
+let title1 = document.getElementById('title1');
+let body1 = document.getElementById('body1');
+let link1 = document.getElementById('link1');
 
-//populate output with post data
-for (let i = 0; i < postArr.length; i++) {
+let date2 = document.getElementById('date2');
+let title3 = document.getElementById('title2');
+let body2 = document.getElementById('body2');
+let link2 = document.getElementById('link2');
 
-	output += `<h6>${postArr[i].date}</h6>`;
-	output += `<h3>${postArr[i].title}</h3>`;
-	output += `<p>${postArr[i].body}</p>`;
-	output += `<p class="read-more"><a href=" ${postArr[i].url} " target="_blank" id="link2">Read More...</a></p>`;
+date1.innerText = post1.date;
+title1.innerText = post1.title;
+body1.innerText = post1.body;
+link1.setAttribute('href', post1.url);
 
-}
+date2.innerText = post2.date;
+title2.innerText = post2.title;
+body2.innerText = post2.body;
+link2.setAttribute('href', post2.url);
 
-//append data to blog section of page
-blogOutput.innerHTML = output;
