@@ -23,3 +23,23 @@ let post2 = new post(
 
 postArr.push(post1, post2);
 
+let date1 = document.getElementById('date1');
+let title1 = document.getElementById('title1');
+let body1 = document.getElementById('body1');
+let link1 = document.getElementById('link1');
+
+let date2 = document.getElementById('date2');
+let title3 = document.getElementById('title2');
+let body2 = document.getElementById('body2');
+let link2 = document.getElementById('link2');
+
+date1.innerText = post1.date;
+title1.innerText = post1.title;
+body1.innerText = post1.body;
+link1.setAttribute('href', post1.url);
+
+date2.innerText = post2.date;
+title2.innerText = post2.title;
+body2.innerText = post2.body;
+link2.setAttribute('href', post2.url);
+
