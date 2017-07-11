@@ -87,7 +87,7 @@ pre {
 
 
 p {
-	margin: 0 0 0 1em;
+	margin: 0 0 1em 1em;
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.2em;
 	color: #373737;
@@ -149,6 +149,19 @@ h6 {
 
 p.read-more {
 	margin-bottom: 2em;
+}
+
+/*CONTACT STYLES*/
+textarea {
+	height: 300px;
+}
+
+.social-buttons {
+	text-align: center;
+}
+
+i {
+	margin: 0.1em;
 }
 
 /*FOOTER STYLES*/
