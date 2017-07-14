@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
 	<title>Jeremy Wells || Web Developer</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 	<script src="https://use.fontawesome.com/9fc239fc88.js"></script>
 
     <!-- Required meta tags -->
@@ -19,26 +23,27 @@
   </head>
   <body>
     <div class="container">
+    		<div class="nav-space" id="top"></div>
 			<header>
 				<nav>
 					<ul>
-						<li><a href="#">Top</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#top">Top</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<h1>Jeremy Wells</h1>
-				<h2><pre>Web Developer  ||  Nashville, TN</pre></h2>
+				<h2>Web Developer  ||  Nashville, TN</h2>
 			</header>
 			
 
-
+			<div class="nav-space" id="about"></div>
 			<div class="heading">
 				<h2>About</h2>
 			</div>
-			<section id="about">
+			<section>
 				<div class="row">
 					<div class="bio col-md-6">
 						<p>
@@ -58,74 +63,97 @@
 				
 			</section>
 
+			<div class="nav-space" id="projects"></div>
 			<div class="heading">
 				<h2>Projects</h2>
 			</div>
-			<section id="projects">
+			<section id="portfolio">
 				<div class="row">
 					<div class="col-md-4">
 						<h3>Word Clock</h3>
 						<figure>
+
+							<figcaption>A Javascript clock that displays the time in words. </figcaption>
+
 							<a href="https://github.com/jsheridanwells/word-clock" target="_blank">
 								<img src="img/word_clock.png" alt=" Word Clock">
 							</a>
-							<figcaption>A Javascript clock that displays the time in words. </figcaption>
+							
 						</figure>
 					</div>
 					<div class="col-md-4">
 						<h3>Reading Attitudes Survey</h3>
 						<figure>
+
+							<figcaption>A javascript rendering of the Professor Garfield Reading Attitudes Survey by McKenna and Kear. </figcaption>
+
 							<a href="http://reading-attitudes.surge.sh/" target="_blank">
 								<img src="img/reading_attitudes.png" alt="Reading Attitudes Survey">
 							</a>
-							<figcaption>A javascript rendering of the Professor Garfield Reading Attitudes Survey by McKenna and Kear. </figcaption>
+							
 						</figure>
 					</div>
 					<div class="col-md-4">
 						<h3>Three Card Monte</h3>
 						<figure>
+
+							<figcaption>A vanilla Javascript three card monte game</figcaption>
+
 							<a href="https://github.com/jsheridanwells/three-card-monte" target="_blank">
 								<img src="img/three_card_monte.png" alt="Three Card Monte">
 							</a>
-							<figcaption>A vanilla Javascript three card monte game</figcaption>
+							
 						</figure>
 					</div>
 				</div>
 			</section>
 			
+			<div class="nav-space" id="blog"></div>
 			<div class="heading">
 				<h2>Blog: A Developer's Primer</h2>
 			</div>		
-			<section id="blog">
-				<article>
-					<h6>July 9, 2017</h6>
-					<h3>T is for Terminal, Tools, and Typing</h3>
-					<p>
-						One of the first challenges I’m finding in getting into the developer workflow is keeping my fingers off the laptop’s trackpad.  This means staying away from Apple’s Finder and getting to know the terminal.  As I get a little more muscle memory developed, I’m finding that I can think and type out simple commands, almost like saying magic words and what I want on a web page or a window appears into being.
-					</p>
-					<p><a href="https://jeremywellsdotorg.wordpress.com/2017/07/09/t-is-for-terminal-tools-and-typing/" target="_blank">Read More...</a></p>
-				</article>
-				<article>
-					<h6>July 8, 2017</h6>
-					<h3>L is for Liftoff, Learning, and Landing</h3>
-					<p>
-						Greetings and welcome!  This will be the inaugural post for this blog which will serve as my learning journal for the next six months.  Here I hope to create a record of my experience learning web development and to synthesize new understandings about code, technology, and the learning process.
-					</p>
-					<p><a href="https://jeremywellsdotorg.wordpress.com/2017/07/08/l-is-for-liftoff-learning-and-landing/" target="_blank">Read More...</a></p>
-				</article>
+			<section id="blog-output">
+
+
 			</section>
 
+			<div class="nav-space" id="contact"></div>
 			<div class="heading">
 				<h2>Contact</h2>
 			</div>
-			<section id="Contact">
-				<i class="fa fa-github fa-3x" aria-hidden="true"></i>
-						<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-						<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+			<section>
+				<p>I would love to hear from you.  Please use the form below to contact me.</p>
+
+				<div class="row">
+
+					<div class="form-group col-md-6">
+						
+						<input type="text" class="form-control" id="name" placeholder="Your Name">
+						<input type="email" class="form-control" id="email" placeholder="Your Email">
+						<textarea class="form-control" id="message" placeholder="Your Message..."></textarea><br>
+						<button class="btn btn-secondary">Send Message</button>
+
+					</div>
+					<div class="col-md-6 social-buttons">
+						
+						<a href="https://github.com/jsheridanwells" target="_blank"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/jeremy-wells-5604b941/" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/jsheridanwells" target="_blank"><i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i></a>
+
+					</div>
+				</div>
+
+
+				<form>
+					
+				
+
+
+				</form>
 			</section>
 
 			<footer>
-				<h6>&copy; 2017 Jeremy Sheridan Wells.</h6>
+				<h6>&copy; <span id="copyright"></span> Jeremy Sheridan Wells.</h6>
 
 			</footer>
 
@@ -135,5 +163,11 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+
