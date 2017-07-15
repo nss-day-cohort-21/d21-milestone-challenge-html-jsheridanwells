@@ -153,17 +153,21 @@ section#portfolio {
 }
 
 /*BLOG STYLES*/
+#blog-output {
+	display: flex;
+	flex-direction: column-reverse;
+	padding-right: 1em;
+
+}
+
 article {
-	margin: 0;
+	margin: 2em 3em 2em 2em;
+	width: 100%;
 }
 
 h6 {
 	margin: 1em;
 	font-family: 'Nunito', sans-serif;
-}
-
-p#body1, p#body2 {
-	max-width: 600px;
 }
 
 
@@ -200,15 +204,22 @@ footer h6 {
 
 @media (min-width: 777px) {
 	.portfolio-display {
-	
-		margin: 0 1em;	
+
+		margin: 0 1em;
 	}
-	
+
 	p {
 		font-size: 1.2em;
 	}
 }
 
+@media (min-width: 1100px) {
+	#blog-output {
+		flex-direction: row-reverse;
 
-/*SAVE THESE STYLES FOR LARGER VIEWPORTS*/
-/*p font-size: 1.2em;*/
+	}
+
+	article {
+		width: 50%;
+	}
+}
