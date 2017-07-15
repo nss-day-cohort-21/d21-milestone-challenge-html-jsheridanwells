@@ -1,27 +1,27 @@
-/** {
-	box-sizing: border-box;
-}*/
 
 body {
 	background-color: #fff;
 }
 
+.hidden {
+	display: none;
+}
+
 .container {
-	background-color: #fff;
+	background-color: #eee;
 	width: 99%;
-	
 }
 
 nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;	
+	z-index: 10;
 	display: flex;
 	align-items: center;
 	width: 100%;
 	background-color: #c0b283;
-	/*background-color: rgba(25, 25, 25, 0.2);*/
+	box-shadow: 1px 1px 5px #373737;
 }
 
 .nav-space {
@@ -56,11 +56,10 @@ ul li:hover {
 
 /*HEADER STYLES*/
 header, section {
-	background-color: #f4f4f4;
+	background-color: #fff;
 	width: 90%;
 	margin: 0 auto;
 	min-height: 85vh;
-	
 }
 
 header {
@@ -76,7 +75,6 @@ h1, h2, h3 {
 	font-family: Neucha, cursive;
 	margin-left: 0;
 	color: #373737;
-	
 }
 
 h1 {
@@ -88,9 +86,8 @@ header h2 {
 	color: #373737;
 	text-shadow: 1px 1px 0 #f4f4f4;
 	font-size: 1.5em;
-	/*float: right;*/
-	/*margin-right: 5em;*/
 }
+
 pre {
 	font-family: inherit;
 }
@@ -98,6 +95,8 @@ pre {
 .heading {
 	width: 100%;
 	background-color: #DCD0C0;
+	box-shadow: 1px 1px 5px #373737;
+
 }
 
 .heading h2 {
@@ -108,7 +107,7 @@ pre {
 p {
 	margin: 0 0 1em 1em;
 	font-family: 'Nunito', sans-serif;
-	font-size: 1.2em;
+	font-size: 0.9em;
 	color: #373737;
 }
 
@@ -131,29 +130,26 @@ p:first-child {
 }
 
 /*PROJECTS STYLES*/
-
-.row {
-	width: 100%;
-}
-
-.col-md-4 {
-	text-align: center;
-}
-
 section#portfolio {
 	padding-bottom: 3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.portfolio-display {
+	margin: 1em;
 }
 
 #portfolio img {
+	margin: 0;
 	width: 100%;
-	margin: 1em;
-	border: 1px solid #C0B283;
-	border-radius: 10%;
+	box-shadow: 1px 1px 5px #373737;
 }
 
 #portfolio h3 {
-	margin: 1em 2em 0;
-	font-size: 3em;
+	font-size: 2em;
+	margin-top: 1em;
 }
 
 /*BLOG STYLES*/
@@ -176,6 +172,10 @@ p.read-more {
 }
 
 /*CONTACT STYLES*/
+section#contact-sec {
+	padding: 2em;
+}
+
 textarea {
 	height: 300px;
 }
@@ -190,14 +190,25 @@ i {
 
 /*FOOTER STYLES*/
 footer {
-	background-color: #373737;
+	background-color: #222;
 }
 footer h6 {
-	color: #373737;
+	color: #000;
 	margin: 1em;
 	float: right;
 }
 
-@media () {
-
+@media (min-width: 777px) {
+	.portfolio-display {
+	
+		margin: 0 1em;	
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
 }
+
+
+/*SAVE THESE STYLES FOR LARGER VIEWPORTS*/
+/*p font-size: 1.2em;*/
