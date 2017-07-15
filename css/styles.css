@@ -130,29 +130,26 @@ p:first-child {
 }
 
 /*PROJECTS STYLES*/
-
-.row {
-	width: 100%;
-}
-
-.col-md-4 {
-	text-align: center;
-}
-
 section#portfolio {
 	padding-bottom: 3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.portfolio-display {
+	margin: 1em;
 }
 
 #portfolio img {
+	margin: 0;
 	width: 100%;
-	margin: 1em;
-	border: 1px solid #C0B283;
-	border-radius: 10%;
+	box-shadow: 1px 1px 5px #373737;
 }
 
 #portfolio h3 {
-	margin: 1em 2em 0;
-	font-size: 3em;
+	font-size: 2em;
+	margin-top: 1em;
 }
 
 /*BLOG STYLES*/
@@ -202,9 +199,16 @@ footer h6 {
 }
 
 @media (min-width: 777px) {
+	.portfolio-display {
+	
+		margin: 0 1em;	
+	}
+	
 	p {
 		font-size: 1.2em;
 	}
 }
+
+
 /*SAVE THESE STYLES FOR LARGER VIEWPORTS*/
 /*p font-size: 1.2em;*/
