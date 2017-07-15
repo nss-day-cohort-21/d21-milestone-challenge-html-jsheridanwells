@@ -7,8 +7,8 @@ function post(date, title, body, url) {
 }
 
 let post1 = new post(
-	'July 8, 2017', 
-	'L is for Liftoff, Learning, and Landing', 
+	'July 8, 2017',
+	'L is for Liftoff, Learning, and Landing',
 	'Greetings and welcome!  This will be the inaugural post for this blog which will serve as my learning journal for the next six months.  Here I hope to create a record of my experience learning web development and to synthesize new understandings about code, technology, and the learning process.', 
 	'https://jeremywellsdotorg.wordpress.com/2017/07/08/l-is-for-liftoff-learning-and-landing/'
 	);
@@ -24,18 +24,28 @@ let post2 = new post(
 let postArr = [];
 postArr.push(post1, post2);
 
-let output = '';
+//contiainer for all blog posts
 let blogOutput = document.getElementById('blog-output');
 
-//populate output with post data
-for (let i = 0; i < postArr.length; i++) {
-
-	output += `<h6>${postArr[i].date}</h6>`;
-	output += `<h3>${postArr[i].title}</h3>`;
-	output += `<p>${postArr[i].body}</p>`;
-	output += `<p class="read-more"><a href=" ${postArr[i].url} " target="_blank" id="link2">Read More...</a></p>`;
-
+//create article element with blog data
+function makePost(post) {
+	let article = document.createElement('article');
+	let output = `<h6>${post.date}</h6>`;
+	output += `<h3>${post.title}</h3>`;
+	output += `<p>${post.body}</p>`;
+	output += `<p class="read-more"><a href=" ${post.url} " target="_blank" id="link2">Read More...</a></p>`;
+	article.innerHTML = output;
+	blogOutput.appendChild(article);
 }
 
-//append data to blog section of page
-blogOutput.innerHTML = output;
+//append all post data to page
+for (let i = 0; i < postArr.length; i++) {
+	makePost(postArr[i]);
+}
+
+
+
+// output += `<h6>${postArr[i].date}</h6>`;
+// 	output += `<h3>${postArr[i].title}</h3>`;
+// 	output += `<p>${postArr[i].body}</p>`;
+// 	output += `<p class="read-more"><a href=" ${postArr[i].url} " target="_blank" id="link2">Read More...</a></p>`;
