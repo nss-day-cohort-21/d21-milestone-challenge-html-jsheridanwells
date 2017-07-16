@@ -131,20 +131,21 @@ p:first-child {
 
 /*PROJECTS STYLES*/
 section#portfolio {
-	padding-bottom: 3em;
+	padding: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .portfolio-display {
-	margin: 1em;
+	margin: 0;
+	border: 1px solid #eee;
 }
 
 #portfolio img {
 	margin: 0;
 	width: 100%;
-	box-shadow: 1px 1px 5px #373737;
 }
 
 #portfolio h3 {
