@@ -119,6 +119,13 @@ figcaption {
 
 /*ABOUT STYLES*/
 
+.tech-frame {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 2em;
+}
+
 .bio-pic img {
 	border: 5px solid #C0B283;
 	border-radius: 100%;
